@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Her Story: The First Step",
+    "description": "A young woman shares her journey of breaking gender stereotypes.",
+    "audio_url": "https://yourfirebaseurl.com/audio/first_step.mp3",
+    "duration": 215,
+    "date": "2025-07-03"
+  },
+  {
+    "title": "Overcoming Silence",
+    "description": "She talks about finding her voice in a patriarchal workspace.",
+    "audio_url": "https://yourfirebaseurl.com/audio/silence.mp3",
+    "duration": 182,
+    "date": "2025-07-04"
+  }
+]
