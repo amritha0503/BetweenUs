@@ -73,3 +73,52 @@ class EmpathyScore {
     };
   }
 }
+
+// Add integration methods to work with the new EmpathyProfile system
+extension EmpathyNeuralProfileExtension on EmpathyNeuralProfile {
+  // Convert to the new EmpathyProfile format
+  Map<String, double> get categoryScores {
+    return {
+      'Emotional Intelligence': (toneScores['empathy'] ?? 0).toDouble(),
+      'Active Listening': (toneScores['listening'] ?? 0).toDouble(),
+      'Non-Verbal Awareness': (toneScores['awareness'] ?? 0).toDouble(),
+      'Conflict Resolution': (toneScores['conflict'] ?? 0).toDouble(),
+    };
+  }
+
+  double get overallEmpathyScore {
+    final scores = categoryScores.values;
+    return scores.isEmpty ? 0.0 : scores.reduce((a, b) => a + b) / scores.length;
+  }
+
+  List<String> get strengths {
+    return toneScores.entries
+        .where((entry) => entry.value >= 80)
+        .map((entry) => _mapToneToCategory(entry.key))
+        .toList();
+  }
+
+  List<String> get improvementAreas {
+    final areas = toneScores.entries
+        .where((entry) => entry.value < 60)
+        .map((entry) => _mapToneToCategory(entry.key))
+        .toList();
+    areas.addAll(blindSpots);
+    return areas;
+  }
+
+  String _mapToneToCategory(String tone) {
+    switch (tone) {
+      case 'empathy':
+        return 'Emotional Intelligence';
+      case 'listening':
+        return 'Active Listening';
+      case 'awareness':
+        return 'Non-Verbal Awareness';
+      case 'conflict':
+        return 'Conflict Resolution';
+      default:
+        return tone;
+    }
+  }
+}

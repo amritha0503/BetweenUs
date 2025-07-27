@@ -96,6 +96,8 @@ class VoiceOfHerProvider extends ChangeNotifier {
       _nextDailyTime(),
       details,
       androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+      uiLocalNotificationDateInterpretation:
+          UILocalNotificationDateInterpretation.absoluteTime,
       matchDateTimeComponents: DateTimeComponents.time,
     );
   }

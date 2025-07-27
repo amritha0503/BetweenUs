@@ -1,0 +1,23 @@
+{
+  "scenarios": [
+    {
+      "id": "1",
+      "title": "She seems upset after dinner",
+      "description": "Your partner has been quiet since dinner.",
+      "situation": "Your partner says 'I'm fine' but seems upset.",
+      "category": "Communication",
+      "difficulty": 2,
+      "lessonLearned": "Sometimes 'I'm fine' doesn't mean everything is okay.",
+      "options": [
+        {
+          "id": "1a",
+          "text": "Push harder for answers",
+          "response": "She gets more frustrated.",
+          "isCorrect": false,
+          "explanation": "Pushing often makes people defensive.",
+          "points": 0
+        }
+      ]
+    }
+  ]
+}

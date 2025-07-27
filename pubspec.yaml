@@ -1,5 +1,5 @@
-name: flutter_application_1
-description: "A new Flutter project."
+name: Hearth
+description: "Where emotions meet"
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -19,18 +19,16 @@ dependencies:
   provider: ^6.0.5
 
   # 🎧 Audio
-  just_audio: ^0.10.4
-
-  # 📊 Charts
-  fl_chart: ^0.60.0
+  just_audio: ^0.9.34
+  youtube_player_flutter: ^9.1.1
 
   # 🔔 Notifications
-  flutter_local_notifications: ^19.3.1
-  timezone: ^0.10.0
-
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.9.4
+  
   # 🌐 Env & HTTP
   flutter_dotenv: ^5.0.2
-  http: ^1.4.0
+  http: ^0.13.6
 
   # 🕓 Date formatting
   intl: ^0.18.0
@@ -50,6 +48,7 @@ flutter:
   assets:
     - assets/audio/
     - assets/images/
+    - assets/sounds/pop.mp3
     - .env
 flutter_local_notifications:
   platform:

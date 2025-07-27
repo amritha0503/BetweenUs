@@ -1,6 +1,18 @@
-dev_dependencies:
-=======
+<<<<<<<
+dependencies:
+  flutter:
+    sdk: flutter
   cupertino_icons: ^1.0.2
-  shared_preferences: ^2.1.1
-
-dev_dependencies:
+=======
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  provider: ^6.0.0
+  flutter_local_notifications: ^12.0.4
+  just_audio: ^0.9.30
+  cloud_firestore: ^4.5.0
+  firebase_storage: ^11.0.16
+  firebase_core: ^2.13.0
+  path_provider: ^2.0.15
+  record: ^4.4.3
