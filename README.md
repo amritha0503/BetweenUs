@@ -1,17 +1,36 @@
 # UNSPOKEN-"WHERE EMOTIONS MEET"
 
 
-A new Flutter project.
+Unspoken is a mobile app that bridges emotional gaps between men and women by enabling honest, empathetic communication. Through chatbots, stories, and mood-based features, it helps users decode emotional misunderstandings and express what often goes unspoken. 💡 Key Features
 
-## Getting Started
+Ask a Woman / Ask a Man: Gender-based AI chatbots for sensitive questions
 
-This project is a starting point for a Flutter application.
+Voice of Her/Him: Real, anonymous stories via audio
 
-A few resources to get you started if this is your first Flutter project:
+Empathy Meter: Reflect on emotions and improve understanding
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Mood Tunes & Mini Games: Manage stress and stay emotionally engaged
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Empathy Keyboard: Express with emotional depth
+
+🛠️ Tech Stack
+
+Frontend: Flutter
+
+Backend: Firebase (Auth + Firestore + Storage)
+
+AI: OpenAI API for emotionally tuned chatbot
+
+Audio: just_audio for story streaming
+
+🚀 Why It Matters
+
+Miscommunication silently affects mental health. Unspoken creates a safe, relatable space for users to connect, understand, and grow — emotionally and socially. 👥 Team EmotionLoop
+
+Mufeedha Aliyar – Frontend
+
+Neha George – Backend
+
+Amritha Suresh – AI Integration
+
+Neha S – Research & Content
